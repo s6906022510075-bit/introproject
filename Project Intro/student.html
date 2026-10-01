@@ -2,162 +2,116 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ขั้นตอนที่ 1: ข้อมูลส่วนตัว | FITM มจพ.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ข้อมูลส่วนตัว | สมัครเรียน มจพ.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/student.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-
-  <header class="site-header">
-    <div class="topband">
-      <div class="wrap topband-in">
-        <a class="brand" href="index.html">
-          <span class="logo">FITM</span>
-          <span><b>รับสมัครนักศึกษา</b><small>คณะเทคโนโลยีและการจัดการอุตสาหกรรม มจพ.</small></span>
-        </a>
-        <div class="toplinks">
-          <a href="https://www.fitm.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์คณะ</a>
-          <a href="https://www.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์ มจพ.</a>
-        </div>
-      </div>
-    </div>
-    <div class="navrow">
-      <div class="wrap navrow-in">
-        <input type="checkbox" id="menu-toggle" aria-label="เปิดเมนู">
-        <label for="menu-toggle" class="burger" aria-hidden="true">☰ เมนู</label>
-        <nav class="nav" aria-label="เมนูหลัก">
-          <a href="index.html">หน้าแรก</a>
-          <a href="index.html#programs">สาขาที่เปิดรับ</a>
-          <a href="index.html#steps">ขั้นตอนการสมัคร</a>
-          <a href="index.html#dates">กำหนดการ</a>
-          <a href="step1.html" class="btn">สมัครเรียน</a>
-        </nav>
-      </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/logo_kmutnb-6.png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+        <span><span class="brand-title">รับสมัครนักศึกษา</span><span class="brand-subtitle">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span></span>
+      </a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a class="nav-link" href="index.html">หน้าหลัก</a>
+        <a class="nav-link" href="date.html">กำหนดการ</a>
+        <a class="btn" href="register.html">สมัครเรียน</a>
+      </nav>
     </div>
   </header>
 
-  <div class="page-head">
-    <div class="wrap">
-      <h1>ลงทะเบียนสมัครเรียน</h1>
-      <p>ขั้นตอนที่ 1 จาก 4 ขั้นตอน</p>
-    </div>
-  </div>
+  <!-- Main -->
+  <main class="main container">
+    <h1 class="page-heading">ข้อมูลผู้สมัคร</h1>
+    <p class="page-intro">ขั้นตอนที่ 1 จาก 4 ขั้นตอน กรุณากรอกข้อมูลให้ครบถ้วน</p>
+    <form class="form-container" action="place.html">
+      <section class="section-box">
+        <h3>ข้อมูลส่วนตัว</h3>
+        <div class="form-grid">
+          <div class="form-group form-group-full">
+            <label class="form-label" for="program">สาขาวิชาที่ต้องการสมัคร <span class="req">*</span></label>
+            <select class="form-control" id="program" required>
+              <option value="" selected disabled>เลือกสาขาวิชา</option>
+              <option value="ITI">ITI - เทคโนโลยีสารสนเทศเพื่ออุตสาหกรรมดิจิทัล</option>
+              <option value="INET">INET - เทคโนโลยีเครือข่ายคอมพิวเตอร์และระบบความมั่นคงปลอดภัย</option>
+              <option value="INE">INE - วิศวกรรมสารสนเทศและเครือข่าย</option>
+              <option value="IT">IT - เทคโนโลยีสารสนเทศ</option>
+              <option value="ITT">ITT - เทคโนโลยีสารสนเทศ (ต่อเนื่อง/เทียบโอน)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="prefix">คำนำหน้า <span class="req">*</span></label>
+            <select class="form-control" id="prefix" required>
+              <option value="" selected disabled>เลือกคำนำหน้า</option>
+              <option>นาย</option><option>นางสาว</option><option>นาง</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="first-name">ชื่อ <span class="req">*</span></label>
+            <input class="form-control" id="first-name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="last-name">นามสกุล <span class="req">*</span></label>
+            <input class="form-control" id="last-name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="national-id">เลขประจำตัวประชาชน <span class="req">*</span></label>
+            <input class="form-control" id="national-id" inputmode="numeric" pattern="[0-9]{13}" maxlength="13" placeholder="ตัวเลข 13 หลัก" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="birth-date">วันเกิด <span class="req">*</span></label>
+            <input class="form-control" id="birth-date" type="date" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">เบอร์โทรศัพท์ <span class="req">*</span></label>
+            <input class="form-control" id="phone" type="tel" pattern="0[0-9]{8,9}" placeholder="0812345678" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">อีเมล <span class="req">*</span></label>
+            <input class="form-control" id="email" type="email" required>
+          </div>
+        </div>
+      </section>
 
-  <main>
-    <form action="place.html" method="get">
-      
-      <!-- กลุ่มที่ 1: ข้อมูลส่วนตัว -->
-      <fieldset>
-        <legend>1. ข้อมูลส่วนตัว</legend>
-        
-        <label class="full">
-          <span>สาขาวิชาที่ต้องการสมัคร <b class="req">*</b></span>
-          <select name="program" required>
-            <option value="" selected disabled>-- เลือกสาขา --</option>
-            <option value="ITI">ITI – เทคโนโลยีสารสนเทศเพื่ออุตสาหกรรมดิจิทัล</option>
-            <option value="INET">INET – เทคโนโลยีเครือข่ายคอมพิวเตอร์และระบบความมั่นคงปลอดภัย</option>
-            <option value="INE">INE – วิศวกรรมสารสนเทศและเครือข่าย</option>
-            <option value="IT">IT – เทคโนโลยีสารสนเทศ</option>
-            <option value="ITT">ITT – เทคโนโลยีสารสนเทศ (ต่อเนื่อง/เทียบโอน)</option>
-          </select>
-        </label>
-
-        <label>
-          <span>คำนำหน้า <b class="req">*</b></span>
-          <select name="prefix" required>
-            <option value="" disabled selected>เลือก</option>
-            <option>นาย</option>
-            <option>นางสาว</option>
-            <option>นาง</option>
-          </select>
-        </label>
-
-        <label>
-          <span>ชื่อ <b class="req">*</b></span>
-          <input name="first_name" required>
-        </label>
-
-        <label>
-          <span>นามสกุล <b class="req">*</b></span>
-          <input name="last_name" required>
-        </label>
-
-        <label>
-          <span>เลขบัตรประชาชน <b class="req">*</b></span>
-          <input name="national_id" pattern="[0-9]{13}" maxlength="13" placeholder="13 หลัก ไม่มีขีด" required>
-        </label>
-
-        <label>
-          <span>วันเกิด <b class="req">*</b></span>
-          <input type="date" name="birth_date" required>
-        </label>
-
-        <label>
-          <span>เบอร์โทรศัพท์ <b class="req">*</b></span>
-          <input type="tel" name="phone" pattern="0[0-9]{8,9}" placeholder="0812345678" required>
-        </label>
-
-        <label>
-          <span>อีเมล <b class="req">*</b></span>
-          <input type="email" name="email" required>
-        </label>
-      </fieldset>
-
-      <!-- กลุ่มที่ 2: อัปโหลดรูปถ่ายและเอกสารประจำตัว -->
-      <fieldset>
-        <legend>เอกสารประกอบการสมัคร</legend>
-        
-        <!-- 1. รูปถ่ายผู้สมัคร -->
-        <label class="full">
-          <span>1. รูปถ่ายผู้สมัคร (ขนาด 1 นิ้ว) <b class="req">*</b></span>
-          <input type="file" name="applicant_photo" id="photoInput" accept="image/png, image/jpeg" required>
-        </label>
-        <small class="help-text">รองรับไฟล์ .JPG, .PNG ขนาดไม่เกิน 2MB (รูปถ่ายหน้าตรง ไม่สวมแว่นดำ)</small>
-
-        <!-- 2. สำเนาทะเบียนบ้าน -->
-        <label class="full">
-          <span>2. สำเนาทะเบียนบ้าน <b class="req">*</b></span>
-          <input type="file" name="house_registration_file" id="houseInput" accept=".pdf, image/png, image/jpeg" required>
-        </label>
-        <small class="help-text">รองรับไฟล์ .PDF, .JPG, .PNG ขนาดไม่เกิน 5MB (พร้อมรับรองสำเนาถูกต้อง)</small>
-
-        <!-- 3. สำเนาบัตรประชาชน -->
-        <label class="full">
-          <span>3. สำเนาบัตรประชาชน <b class="req">*</b></span>
-          <input type="file" name="id_card_file" id="idCardInput" accept=".pdf, image/png, image/jpeg" required>
-        </label>
-        <small class="help-text">รองรับไฟล์ .PDF, .JPG, .PNG ขนาดไม่เกิน 5MB (พร้อมรับรองสำเนาถูกต้อง)</small>
-      </fieldset>
-
-      <div class="actions end">
-        <button type="submit" class="btn">ถัดไป (ที่อยู่) &rarr;</button>
+      <section class="section-box">
+        <h3>เอกสารประกอบการสมัคร</h3>
+        <div class="form-grid">
+          <div class="form-group form-group-full">
+            <label class="form-label" for="applicant-photo">รูปถ่ายผู้สมัคร ขนาด 1 นิ้ว <span class="req">*</span></label>
+            <input class="form-control" id="applicant-photo" type="file" accept="image/png, image/jpeg" required>
+            <small class="help-text">รองรับไฟล์ JPG หรือ PNG ขนาดไม่เกิน 2 MB</small>
+          </div>
+          <div class="form-group form-group-full">
+            <label class="form-label" for="house-registration">สำเนาทะเบียนบ้าน <span class="req">*</span></label>
+            <input class="form-control" id="house-registration" type="file" accept=".pdf, image/png, image/jpeg" required>
+            <small class="help-text">รองรับไฟล์ PDF, JPG หรือ PNG ขนาดไม่เกิน 5 MB</small>
+          </div>
+          <div class="form-group form-group-full">
+            <label class="form-label" for="id-card">สำเนาบัตรประชาชน <span class="req">*</span></label>
+            <input class="form-control" id="id-card" type="file" accept=".pdf, image/png, image/jpeg" required>
+            <small class="help-text">รองรับไฟล์ PDF, JPG หรือ PNG ขนาดไม่เกิน 5 MB</small>
+          </div>
+        </div>
+      </section>
+      <div class="actions">
+        <a class="btn btn-secondary" href="register.html">ย้อนกลับ</a>
+        <button class="btn" type="submit">ถัดไป: ที่อยู่</button>
       </div>
-
     </form>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <div>
-        <h4>ลิงก์ที่เกี่ยวข้อง</h4>
-        <ul>
-          <li><a href="https://www.fitm.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์คณะ FITM</a></li>
-          <li><a href="https://www.kmutnb.ac.th/" target="_blank" rel="noopener">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>ติดต่อ</h4>
-        <p>คณะเทคโนโลยีและการจัดการอุตสาหกรรม มจพ.</p>
-      </div>
-      <div>
-        <h4>เกี่ยวกับโปรเจกต์</h4>
-        <p>© FITM KMUTNB</p>
-      </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <section><h2>ระบบสมัครเรียนออนไลน์</h2><p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p></section>
+      <section><h2>ติดต่อ</h2><p>โทร. +66 2 555-2000 ต่อ 1626,1627</p></section>
+      <section><h2>ข้อมูลเพิ่มเติม</h2><p><a href="date.html">กำหนดการรับสมัคร</a></p></section>
     </div>
   </footer>
-
 </body>
 </html>

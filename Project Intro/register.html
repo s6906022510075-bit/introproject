@@ -3,149 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ลงทะเบียนเข้าสู่ระบบ | รับสมัครนักศึกษา มจพ.</title>
+  <title>ลงทะเบียน | สมัครเรียน มจพ.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  <!-- Top Bar -->
-  <header class="top-header">
-    <div class="wrap top-header-in">
-      <div class="brand-box">
-        <img src="img/logo_kmutnb-6.png" alt="ตรา มจพ." class="logo-img">
-        <div class="brand-title">
-          <h1>รับสมัครนักศึกษา</h1>
-          <h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
-        </div>
-      </div>
-      <div class="top-right-links">
-        <a href="#">แผนที่สนามสอบจัดเรียน</a>
-        <span>|</span>
-        <a href="#">ติดต่อเรา</a>
-      </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/logo_kmutnb-6.png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+        <span><span class="brand-title">รับสมัครนักศึกษา</span><span class="brand-subtitle">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span></span>
+      </a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a class="nav-link" href="index.html">หน้าหลัก</a>
+        <a class="nav-link" href="date.html">กำหนดการ</a>
+        <a class="btn" href="register.html">สมัครเรียน</a>
+      </nav>
     </div>
   </header>
-  <!-- Main Navigation Bar -->
-  <nav class="main-nav">
-    <div class="wrap nav-in">
-      <ul class="menu-list">
-        <li><a href="index.html">หน้าแรก</a></li>
-        <li><a href="step1.html">รับสมัคร</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- Banner Section -->
-  <section class="banner-section">
-    <div class="wrap">
-      <img src="img/Banner.png" alt="แบนเนอร์รับสมัครนักศึกษา" class="custom-banner-img">
-    </div>
-  </section>
-  <!-- Main Content -->
-  <main class="main-content">
-    <div class="wrap">
-      <!-- Section Title -->
-      <h2 class="page-title">ลงทะเบียน</h2>
-      <!-- Description & Rules -->
-      <div class="rules-box">
-        <p>การลงทะเบียนเพื่อสมัครเข้าศึกษาต่อผู้สมัครต้องยอมรับเงื่อนไขและข้อตกลงที่มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือกำหนดก่อนจึงจะทำการสมัครได้ ซึ่งจะปรากฏในหน้าถัดไปภายหลังจากที่ผู้สมัครทำการลงทะเบียนเพื่อสมัครเรียนแล้ว</p>
-        <p><strong>จำนวนอันดับการสมัคร</strong></p>
-        <ul>
-          <li>โปรดตรวจสอบจากประกาศรับสมัครของมหาวิทยาลัย หรือระเบียบการรับสมัครในโครงการที่เปิดรับ</li>
-        </ul>
-        <p><strong>ค่าสมัครสอบ</strong></p>
-        <ul>
-          <li>ระดับประกาศนียบัตรวิชาชีพ เก็บค่าสมัครสอบเริ่มต้นสำหรับการเลือกสาขาอันดับ 1 เป็นเงิน 300 บาท และอันดับถัดไปสาขาละ 100 บาท (ถ้ามี)</li>
-          <li>ระดับปริญญาตรี เก็บค่าสมัครสอบเริ่มต้นสำหรับการเลือกสาขาวิชาอันดับ 1 เป็นเงิน 400 บาท และอันดับถัดไปสาขาวิชาละ 100 บาท (ถ้ามี)</li>
-        </ul>
-      </div>
-      <!-- Registration Form Container -->
-      <div class="form-container">
-        <div class="form-header">
-          ลงทะเบียนเพื่อสมัครเรียน (ข้อมูลที่กรอกต้องเป็นของผู้สมัครเข้าศึกษาเท่านั้น)
+
+  <!-- Main -->
+  <main class="main container">
+    <h1 class="page-heading">ลงทะเบียนบัญชีผู้สมัคร</h1>
+    <p class="page-intro">กรอกข้อมูลของผู้สมัครเพื่อเริ่มต้นการสมัครเรียน</p>
+    <section class="content-box">
+      <h2>ข้อควรทราบ</h2>
+      <p>โปรดตรวจสอบประกาศรับสมัครและจำนวนสาขาที่เลือกได้ก่อนสมัคร ค่าสมัครสอบขึ้นอยู่กับระดับและโครงการที่เปิดรับ</p>
+      <p>ข้อมูลที่กรอกต้องเป็นของผู้สมัครเข้าศึกษา และอีเมลต้องสามารถใช้งานได้</p>
+    </section>
+    <form class="form-container" action="student.html">
+      <div class="form-title">ข้อมูลบัญชีและข้อมูลติดต่อ</div>
+      <div class="form-grid">
+        <div class="form-group form-group-full">
+          <label class="form-label" for="citizen-id">เลขประจำตัวประชาชนหรือหนังสือเดินทาง <span class="req">*</span></label>
+          <input class="form-control" id="citizen-id" maxlength="13" required>
         </div>
-        <form action="step1.html" method="get" class="register-form">
-          <div class="form-group">
-            <label class="required">เลขประจำตัวประชาชน</label>
-            <div class="input-wrap">
-              <input type="text" name="citizen_id" maxlength="13" placeholder="เลขประจำตัวประชาชน 13 หลักหรือหนังสือเดินทาง" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="required">รหัสผ่าน</label>
-            <div class="input-wrap">
-              <input type="password" name="password" id="password" placeholder="ความยาวไม่ต่ำกว่า 8 ตัวอักษร" required>
-            </div>
-            <span class="icon-eye">👁</span>
-            <span class="field-note">เป็นตัวเลขและตัวอักษรภาษาอังกฤษรวมกัน</span>
-          </div>
-          <div class="form-group">
-            <label class="required">ยืนยันรหัสผ่าน</label>
-            <div class="input-wrap">
-              <input type="password" name="confirm_password" id="confirm_password" placeholder="เหมือนกับรหัสผ่าน" required>
-            </div>
-            <span class="icon-eye">👁</span>
-          </div>
-          <div class="form-group">
-            <label class="required">ชื่อ</label>
-            <div class="input-wrap">
-              <input type="text" name="first_name" placeholder="ชื่อ(ไทย) *ไม่ต้องมีคำนำหน้าชื่อ" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="required">นามสกุล(ไทย)</label>
-            <div class="input-wrap">
-              <input type="text" name="last_name" placeholder="นามสกุล" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="required">อีเมล</label>
-            <div class="input-wrap">
-              <input type="email" name="email" placeholder="" required>
-            </div>
-            <span class="field-note">อีเมลนี้ต้องใช้ได้จริง สำหรับใช้ในการติดต่อและเปลี่ยนรหัสผ่าน</span>
-          </div>
-          <div class="form-group">
-            <label class="required">ยืนยันอีเมล</label>
-            <div class="input-wrap">
-              <input type="email" name="confirm_email" placeholder="email@kmutnb.ac.th" required>
-            </div>
-          </div>
-          <!-- Submit Button -->
-          <div class="form-actions">
-            <a href="student.html" class="btn-submit">ลงทะเบียน</a>
-          </div>
-        </form>
+        <div class="form-group">
+          <label class="form-label" for="password">รหัสผ่าน <span class="req">*</span></label>
+          <input class="form-control" id="password" type="password" minlength="8" autocomplete="new-password" required>
+          <small class="help-text">อย่างน้อย 8 ตัวอักษร ประกอบด้วยตัวเลขและตัวอักษรภาษาอังกฤษ</small>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="confirm-password">ยืนยันรหัสผ่าน <span class="req">*</span></label>
+          <input class="form-control" id="confirm-password" type="password" minlength="8" autocomplete="new-password" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="first-name">ชื่อ <span class="req">*</span></label>
+          <input class="form-control" id="first-name" placeholder="ไม่ต้องใส่คำนำหน้า" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="last-name">นามสกุล <span class="req">*</span></label>
+          <input class="form-control" id="last-name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">อีเมล <span class="req">*</span></label>
+          <input class="form-control" id="email" type="email" autocomplete="email" required>
+          <small class="help-text">ใช้สำหรับติดต่อและรับข้อมูลการสมัคร</small>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="confirm-email">ยืนยันอีเมล <span class="req">*</span></label>
+          <input class="form-control" id="confirm-email" type="email" required>
+        </div>
       </div>
-    </div>
+      <div class="actions">
+        <a class="btn btn-secondary" href="index.html">ย้อนกลับ</a>
+        <button class="btn" type="submit">ลงทะเบียนและกรอกใบสมัคร</button>
+      </div>
+    </form>
   </main>
+
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="wrap footer-in">
-      <div class="footer-col">
-        <h4>ลิงก์ที่เกี่ยวข้อง</h4>
-        <ul>
-          <li><a href="#">&rsaquo; มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</a></li>
-          <li><a href="#">&rsaquo; ชำระเงิน/ลงทะเบียนนักศึกษาใหม่</a></li>
-          <li><a href="#">&rsaquo; กองบริการการศึกษา</a></li>
-          <li><a href="#">&rsaquo; กองกิจการนักศึกษา</a></li>
-          <li><a href="#">&rsaquo; แบบประเมินความพึงพอใจ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>ติดต่อ</h4>
-        <p>กลุ่มงานรับเข้าศึกษา กองบริการการศึกษา สำนักงานอธิการบดี ชั้น 2 อาคาร TGGS</p>
-        <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ 1518</p>
-        <p>ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800</p>
-        <p>📞 +66 2 555-2000 ต่อ 1626, 1627</p>
-        <p>📠 +66 2 555-2171</p>
-        <p>facebook : <a href="#">AdmissionKMUTNB - กลุ่มงานรับเข้าศึกษา มจพ.</a></p>
-      </div>
-      <div class="footer-col">
-        <h4>ติดตามเราได้ที่</h4>
-        <a href="#" class="social-fb">f</a>
-      </div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <section><h2>ระบบสมัครเรียนออนไลน์</h2><p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p></section>
+      <section><h2>ติดต่อ</h2><p>โทร. +66 2 555-2000 ต่อ 1626,1627</p></section>
+      <section><h2>ข้อมูลเพิ่มเติม</h2><p><a href="date.html">กำหนดการรับสมัคร</a></p></section>
     </div>
   </footer>
 </body>

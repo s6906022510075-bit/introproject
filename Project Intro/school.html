@@ -3,112 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ขั้นตอนที่ 3: ประวัติการศึกษา | FITM มจพ.</title>
+  <title>ประวัติการศึกษา | สมัครเรียน มจพ.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/student.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="site-header">
-    <div class="topband">
-      <div class="wrap topband-in">
-        <a class="brand" href="index.html">
-          <span class="logo">FITM</span>
-          <span><b>รับสมัครนักศึกษา</b><small>คณะเทคโนโลยีและการจัดการอุตสาหกรรม มจพ.</small></span>
-        </a>
-        <div class="toplinks">
-          <a href="https://www.fitm.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์คณะ</a>
-          <a href="https://www.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์ มจพ.</a>
-        </div>
-      </div>
-    </div>
-    <div class="navrow">
-      <div class="wrap navrow-in">
-        <input type="checkbox" id="menu-toggle" aria-label="เปิดเมนู">
-        <label for="menu-toggle" class="burger" aria-hidden="true">☰ เมนู</label>
-        <nav class="nav" aria-label="เมนูหลัก">
-          <a href="index.html">หน้าแรก</a>
-          <a href="index.html#programs">สาขาที่เปิดรับ</a>
-          <a href="index.html#steps">ขั้นตอนการสมัคร</a>
-          <a href="index.html#dates">กำหนดการ</a>
-          <a href="step1.html" class="btn">สมัครเรียน</a>
-        </nav>
-      </div>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img class="brand-logo" src="img/logo_kmutnb-6.png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ"><span><span class="brand-title">รับสมัครนักศึกษา</span><span class="brand-subtitle">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span></span></a>
+      <nav class="nav" aria-label="เมนูหลัก"><a class="nav-link" href="index.html">หน้าหลัก</a><a class="nav-link" href="date.html">กำหนดการ</a><a class="btn" href="register.html">สมัครเรียน</a></nav>
     </div>
   </header>
-  <!-- Page Title -->
-  <div class="page-head">
-    <div class="wrap">
-      <h1>ลงทะเบียนสมัครเรียน</h1>
-      <p>ขั้นตอนที่ 3 จาก 4 ขั้นตอน</p>
-    </div>
-  </div>
-  <!-- Main Content & Form -->
-  <main>
-    <form action="parents.html" method="get">
-      <!-- กลุ่มที่ 1: ประวัติการศึกษา -->
-      <fieldset>
-        <legend>3. ประวัติการศึกษา</legend>
-        <label>
-          <span>วุฒิการศึกษาสูงสุด <b class="req">*</b></span>
-          <select name="education_level" required>
-            <option value="" disabled selected>-- เลือกวุฒิการศึกษา --</option>
-            <option value="m6">มัธยมศึกษาปีที่ 6 (ม.6)</option>
-            <option value="pvc">ประกาศนียบัตรวิชาชีพ (ปวช.)</option>
-            <option value="pvs">ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</option>
-          </select>
-        </label>
-        <label>
-          <span>เกรดเฉลี่ยสะสม (GPAX) <b class="req">*</b></span>
-          <input type="number" step="0.01" min="0" max="4.00" name="gpax" required placeholder="เช่น 3.50">
-        </label>
-        <label class="full">
-          <span>ชื่อสถานศึกษาเดิม <b class="req">*</b></span>
-          <input type="text" name="school_name" required placeholder="เช่น โรงเรียนเตรียมอุดมศึกษา">
-        </label>
-        <label>
-          <span>ปีที่สำเร็จการศึกษา (พ.ศ.) <b class="req">*</b></span>
-          <input type="number" name="grad_year" required placeholder="เช่น 2567">
-        </label>
-      </fieldset>
-      <!-- กลุ่มที่ 2: อัปโหลดเอกสารหลักฐาน (แยก fieldset) -->
-      <fieldset>
-        <legend>เอกสารวุฒิการศึกษา</legend>
-        <label class="full">
-          <span>อัปโหลดหลักฐานวุฒิการศึกษา (ใบ ปพ.1 / Transcript) <b class="req">*</b></span>
-          <input type="file" name="transcript_file" id="transcriptInput" accept=".pdf, image/png, image/jpeg" required>
-        </label>
-        <small class="help-text">รองรับไฟล์ .PDF, .JPG, .PNG ขนาดไม่เกิน 5MB (รูปถ่ายหรือสแกนหน้าตรง ชัดเจน)</small>
-      </fieldset>
-      <!-- ปุ่มนำทาง -->
-      <div class="actions between">
-        <a href="place.html" class="btn outline">&larr; ย้อนกลับ (ที่อยู่)</a>
-        <button type="submit" class="btn">ถัดไป (ข้อมูลผู้ปกครอง) &rarr;</button>
+
+  <!-- Main -->
+  <main class="main container">
+    <h1 class="page-heading">ประวัติการศึกษา</h1>
+    <p class="page-intro">ขั้นตอนที่ 3 จาก 4 ขั้นตอน</p>
+    <form class="form-container" action="parents.html">
+      <section class="section-box">
+        <h3>ข้อมูลสถานศึกษา</h3>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="education-level">วุฒิการศึกษาสูงสุด <span class="req">*</span></label>
+            <select class="form-control" id="education-level" required>
+              <option value="" selected disabled>เลือกวุฒิการศึกษา</option>
+              <option value="m6">มัธยมศึกษาปีที่ 6 (ม.6)</option>
+              <option value="pvc">ประกาศนียบัตรวิชาชีพ (ปวช.)</option>
+              <option value="pvs">ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="gpax">เกรดเฉลี่ยสะสม (GPAX) <span class="req">*</span></label>
+            <input class="form-control" id="gpax" type="number" step="0.01" min="0" max="4" placeholder="เช่น 3.50" required>
+          </div>
+          <div class="form-group form-group-full">
+            <label class="form-label" for="school-name">ชื่อสถานศึกษาเดิม <span class="req">*</span></label>
+            <input class="form-control" id="school-name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="grad-year">ปีที่สำเร็จการศึกษา (พ.ศ.) <span class="req">*</span></label>
+            <input class="form-control" id="grad-year" type="number" placeholder="เช่น 2567" required>
+          </div>
+        </div>
+      </section>
+      <section class="section-box">
+        <h3>เอกสารวุฒิการศึกษา</h3>
+        <div class="form-group">
+          <label class="form-label" for="transcript">ใบ ปพ.1 หรือ Transcript <span class="req">*</span></label>
+          <input class="form-control" id="transcript" type="file" accept=".pdf, image/png, image/jpeg" required>
+          <small class="help-text">รองรับไฟล์ PDF, JPG หรือ PNG ขนาดไม่เกิน 5 MB</small>
+        </div>
+      </section>
+      <div class="actions">
+        <a class="btn btn-secondary" href="place.html">ย้อนกลับ</a>
+        <button class="btn" type="submit">ถัดไป: ข้อมูลผู้ปกครอง</button>
       </div>
     </form>
   </main>
-  <!-- Footer -->
-  <footer>
-    <div class="wrap">
-      <div>
-        <h4>ลิงก์ที่เกี่ยวข้อง</h4>
-        <ul>
-          <li><a href="https://www.fitm.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์คณะ FITM</a></li>
-          <li><a href="https://www.kmutnb.ac.th/" target="_blank" rel="noopener">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>ติดต่อ</h4>
-        <p>คณะเทคโนโลยีและการจัดการอุตสาหกรรม มจพ.</p>
-      </div>
-      <div>
-        <h4>เกี่ยวกับโปรเจกต์</h4>
-        <p>© FITM KMUTNB</p>
-      </div>
-    </div>
-  </footer>
 
+  <!-- Footer -->
+  <footer class="footer"><div class="container footer-inner"><section><h2>ระบบสมัครเรียนออนไลน์</h2><p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p></section><section><h2>ติดต่อ</h2><p>โทร. +66 2 555-2000 ต่อ 1626,1627</p></section><section><h2>ข้อมูลเพิ่มเติม</h2><p><a href="date.html">กำหนดการรับสมัคร</a></p></section></div></footer>
 </body>
 </html>

@@ -3,112 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>สมัครเรียน - ขั้นตอนที่ 4 (ข้อมูลผู้ปกครอง)</title>
-  <link rel="stylesheet" href="css/parents.css">
+  <title>ข้อมูลผู้ปกครอง | สมัครเรียน มจพ.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="site-header">
-    <div class="topband">
-      <div class="topband-in">
-        <div class="brand">
-          <span class="logo">REG</span>
-          <div>
-            <strong>ระบบสมัครเรียนออนไลน์</strong>
-            <small>มหาวิทยาลัยตัวอย่าง</small>
-          </div>
-        </div>
-        <div class="toplinks">
-          <a href="#">หน้าหลัก</a>
-          <a href="#">คู่มือการสมัคร</a>
-        </div>
-      </div>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img class="brand-logo" src="img/logo_kmutnb-6.png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ"><span><span class="brand-title">รับสมัครนักศึกษา</span><span class="brand-subtitle">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span></span></a>
+      <nav class="nav" aria-label="เมนูหลัก"><a class="nav-link" href="index.html">หน้าหลัก</a><a class="nav-link" href="date.html">กำหนดการ</a><a class="btn" href="register.html">สมัครเรียน</a></nav>
     </div>
   </header>
-  <!-- Page Title -->
-  <div class="page-head">
-    <h1>ระบบสมัครเรียนออนไลน์</h1>
-    <p>กรุณากรอกข้อมูลให้ครบถ้วนและถูกต้อง</p>
-  </div>
-  <!-- Form Container -->
-  <form action="success.html" method="get">
-    <!-- 4.1 ข้อมูลบิดา -->
-    <fieldset>
-      <legend>4.1 ข้อมูลบิดา</legend>
-      <label>
-        คำนำหน้า <span class="req">*</span>
-        <select name="father_prefix" required>
-          <option value="">เลือก</option>
-          <option value="mr">นาย</option>
-        </select>
-      </label>
-      <label>
-        ชื่อบิดา <span class="req">*</span>
-        <input type="text" name="father_firstname" required placeholder="ชื่อ">
-      </label>
-      <label>
-        นามสกุลบิดา <span class="req">*</span>
-        <input type="text" name="father_lastname" required placeholder="นามสกุล">
-      </label>
-      <label>
-        เบอร์โทรศัพท์ <span class="req">*</span>
-        <input type="tel" name="father_phone" required placeholder="0812345678">
-      </label>
-      <label>
-        อาชีพ <span class="req">*</span>
-        <input type="text" name="father_occupation" required placeholder="เช่น รับราชการ / ค้าขาย">
-      </label>
-      <label class="full">
-        ที่อยู่บิดา <span class="req">*</span>
-        <textarea name="father_address" rows="2" required placeholder="บ้านเลขที่ ถนน ซอย ตำบล/แขวง อำเภอ/เขต จังหวัด รหัสไปรษณีย์"></textarea>
-      </label>
-    </fieldset>
-    <!-- 4.2 ข้อมูลมารดา -->
-    <fieldset>
-      <legend>4.2 ข้อมูลมารดา</legend>
-      <label>
-        คำนำหน้า <span class="req">*</span>
-        <select name="mother_prefix" required>
-          <option value="">เลือก</option>
-          <option value="mrs">นาง</option>
-          <option value="ms">นางสาว</option>
-        </select>
-      </label>
-      <label>
-        ชื่อมารดา <span class="req">*</span>
-        <input type="text" name="mother_firstname" required placeholder="ชื่อ">
-      </label>
-      <label>
-        นามสกุลมารดา <span class="req">*</span>
-        <input type="text" name="mother_lastname" required placeholder="นามสกุล">
-      </label>
-      <label>
-        เบอร์โทรศัพท์ <span class="req">*</span>
-        <input type="tel" name="mother_phone" required placeholder="0812345678">
-      </label>
-      <label>
-        อาชีพ <span class="req">*</span>
-        <input type="text" name="mother_occupation" required placeholder="เช่น รับราชการ / ค้าขาย">
-      </label>
-      <label class="full">
-        ที่อยู่มารดา <span class="req">*</span>
-        <textarea name="mother_address" rows="2" required placeholder="บ้านเลขที่ ถนน ซอย ตำบล/แขวง อำเภอ/เขต จังหวัด รหัสไปรษณีย์"></textarea>
-      </label>
-    </fieldset>
-    <!-- ปุ่มนำทาง -->
-    <div class="actions between">
-      <a href="school.html" class="btn outline">&larr; ย้อนกลับ (ประวัติการศึกษา)</a>
-      <a href="success.html" class="btn success">ยืนยันการสมัครเรียน</a>s
-    </div>
-  </form>
-  <!-- Footer -->
-  <footer>
-    <div class="wrap">
-      <div>
-        <h4>ระบบสมัครเรียนออนไลน์</h4>
-        <p>สอบถามรายละเอียดเพิ่มเติม โทร. 02-123-4567</p>
+
+  <!-- Main -->
+  <main class="main container">
+    <h1 class="page-heading">ข้อมูลผู้ปกครอง</h1>
+    <p class="page-intro">ขั้นตอนที่ 4 จาก 4 ขั้นตอน</p>
+    <form class="form-container" action="success.html">
+      <section class="section-box">
+        <h3>ข้อมูลบิดา</h3>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="father-prefix">คำนำหน้า <span class="req">*</span></label>
+            <select class="form-control" id="father-prefix" required><option value="" selected disabled>เลือกคำนำหน้า</option><option>นาย</option></select>
+          </div>
+          <div class="form-group"><label class="form-label" for="father-firstname">ชื่อ <span class="req">*</span></label><input class="form-control" id="father-firstname" required></div>
+          <div class="form-group"><label class="form-label" for="father-lastname">นามสกุล <span class="req">*</span></label><input class="form-control" id="father-lastname" required></div>
+          <div class="form-group"><label class="form-label" for="father-phone">เบอร์โทรศัพท์ <span class="req">*</span></label><input class="form-control" id="father-phone" type="tel" required></div>
+          <div class="form-group"><label class="form-label" for="father-occupation">อาชีพ <span class="req">*</span></label><input class="form-control" id="father-occupation" required></div>
+          <div class="form-group form-group-full"><label class="form-label" for="father-address">ที่อยู่ <span class="req">*</span></label><textarea class="form-control" id="father-address" required></textarea></div>
+        </div>
+      </section>
+      <section class="section-box">
+        <h3>ข้อมูลมารดา</h3>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="mother-prefix">คำนำหน้า <span class="req">*</span></label>
+            <select class="form-control" id="mother-prefix" required><option value="" selected disabled>เลือกคำนำหน้า</option><option>นาง</option><option>นางสาว</option></select>
+          </div>
+          <div class="form-group"><label class="form-label" for="mother-firstname">ชื่อ <span class="req">*</span></label><input class="form-control" id="mother-firstname" required></div>
+          <div class="form-group"><label class="form-label" for="mother-lastname">นามสกุล <span class="req">*</span></label><input class="form-control" id="mother-lastname" required></div>
+          <div class="form-group"><label class="form-label" for="mother-phone">เบอร์โทรศัพท์ <span class="req">*</span></label><input class="form-control" id="mother-phone" type="tel" required></div>
+          <div class="form-group"><label class="form-label" for="mother-occupation">อาชีพ <span class="req">*</span></label><input class="form-control" id="mother-occupation" required></div>
+          <div class="form-group form-group-full"><label class="form-label" for="mother-address">ที่อยู่ <span class="req">*</span></label><textarea class="form-control" id="mother-address" required></textarea></div>
+        </div>
+      </section>
+      <div class="actions">
+        <a class="btn btn-secondary" href="school.html">ย้อนกลับ</a>
+        <button class="btn" type="submit">ยืนยันการสมัครเรียน</button>
       </div>
-    </div>
-  </footer>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer"><div class="container footer-inner"><section><h2>ระบบสมัครเรียนออนไลน์</h2><p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p></section><section><h2>ติดต่อ</h2><p>โทร. +66 2 555-2000 ต่อ 1626,1627</p></section><section><h2>ข้อมูลเพิ่มเติม</h2><p><a href="date.html">กำหนดการรับสมัคร</a></p></section></div></footer>
 </body>
 </html>

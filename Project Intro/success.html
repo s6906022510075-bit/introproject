@@ -3,108 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ส่งใบสมัครเรียบร้อยแล้ว | FITM มจพ.</title>
+  <title>สมัครเรียนสำเร็จ | มจพ.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/success.css">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
   <!-- Header -->
-  <header class="site-header">
-    <div class="topband">
-      <div class="wrap topband-in">
-        <a class="brand" href="index.html">
-          <span class="logo">FITM</span>
-          <span><b>รับสมัครนักศึกษา</b><small>คณะเทคโนโลยีและการจัดการอุตสาหกรรม มจพ.</small></span>
-        </a>
-        <div class="toplinks">
-          <a href="https://www.fitm.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์คณะ</a>
-          <a href="https://www.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์ มจพ.</a>
-        </div>
-      </div>
-    </div>
-    <div class="navrow">
-      <div class="wrap navrow-in">
-        <input type="checkbox" id="menu-toggle" aria-label="เปิดเมนู">
-        <label for="menu-toggle" class="burger" aria-hidden="true">☰ เมนู</label>
-        <nav class="nav" aria-label="เมนูหลัก">
-          <a href="index.html">หน้าแรก</a>
-          <a href="index.html#programs">สาขาที่เปิดรับ</a>
-          <a href="index.html#steps">ขั้นตอนการสมัคร</a>
-          <a href="index.html#dates">กำหนดการ</a>
-          <a href="student.html" class="btn">สมัครเรียน</a>
-        </nav>
-      </div>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img class="brand-logo" src="img/logo_kmutnb-6.png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ"><span><span class="brand-title">รับสมัครนักศึกษา</span><span class="brand-subtitle">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span></span></a>
+      <nav class="nav" aria-label="เมนูหลัก"><a class="nav-link" href="index.html">หน้าหลัก</a><a class="nav-link" href="date.html">กำหนดการ</a></nav>
     </div>
   </header>
-  <!-- Page Title -->
-  <div class="page-head">
-    <div class="wrap">
-      <h1>ส่งใบสมัครสำเร็จ</h1>
-      <p>ระบบได้รับการลงทะเบียนใบสมัครของท่านเรียบร้อยแล้ว</p>
-    </div>
-  </div>
-  <!-- Content Container -->
-  <main>
-    <div class="success-form">
-      <div class="success-card">
-        <div class="success-icon">✓</div>
-        <h2 class="success-title">ลงทะเบียนสมัครเรียนเรียบร้อยแล้ว!</h2>
-        <p class="success-subtitle">กรุณาบันทึกหรือพิมพ์เอกสารนี้ไว้เป็นหลักฐานเพื่อใช้ในการติดตามผลการสมัคร</p>
-        <div class="app-number-box">
-          <small>เลขที่ใบสมัครของคุณ</small>
-          <strong>REG-6709-0412</strong>
-        </div>
-        <div class="info-summary">
-          <h3>ข้อมูลการสมัคร</h3>
-          <dl>
-            <dt>สถานะการสมัคร:</dt>
-            <dd><span class="status-badge">รอการตรวจสอบเอกสาร</span></dd>
-            <dt>สาขาวิชาที่สมัคร:</dt>
-            <dd>ITI – เทคโนโลยีสารสนเทศเพื่ออุตสาหกรรมดิจิทัล</dd>
-            <dt>วันที่ลงทะเบียน:</dt>
-            <dd>30 กันยายน 2569 (11:05 น.)</dd>
-          </dl>
-        </div>
-        <div class="next-step-box">
-          <strong>💡 ขั้นตอนถัดไป:</strong>
-          <ul>
-            <li>เจ้าหน้าที่จะทำการตรวจสอบเอกสารและหลักฐานภายใน 2-3 วันทำการ</li>
-            <li>ท่านสามารถติดตามสถานะการสมัครได้จากระบบ หรืออีเมลที่ได้ลงทะเบียนไว้</li>
-          </ul>
-        </div>
-      </div>
-      <div class="actions">
-        <button type="button" class="btn outline" onclick="window.print();">
-          🖨 พิมพ์ใบสมัคร / บันทึก PDF
-        </button>
-        <a href="index.html" class="btn">
-          กลับสู่หน้าหลัก &rarr;
-        </a>
-      </div>
-    </div>
-  </main>
-  <!-- Footer -->
-  <footer>
-    <div class="wrap">
-      <div>
-        <h4>ลิงก์ที่เกี่ยวข้อง</h4>
-        <ul>
-          <li><a href="https://www.fitm.kmutnb.ac.th/" target="_blank" rel="noopener">เว็บไซต์คณะ FITM</a></li>
-          <li><a href="https://www.kmutnb.ac.th/" target="_blank" rel="noopener">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>ติดต่อ</h4>
-        <p>คณะเทคโนโลยีและการจัดการอุตสาหกรรม มจพ.</p>
-      </div>
-      <div>
-        <h4>เกี่ยวกับโปรเจกต์</h4>
-        <p>© FITM KMUTNB</p>
-      </div>
-    </div>
-  </footer>
 
+  <!-- Main -->
+  <main class="main container">
+    <section class="success-box">
+      <h1 class="page-heading">ส่งใบสมัครเรียบร้อยแล้ว</h1>
+      <p class="page-intro">ระบบได้รับข้อมูลการสมัครของคุณแล้ว</p>
+      <div class="status-box">
+        <strong>เลขที่ใบสมัคร</strong>
+        <div class="application-number">REG-6709-0412</div>
+      </div>
+      <section class="section-box">
+        <h3>สรุปข้อมูลการสมัคร</h3>
+        <p><strong>สถานะ:</strong> รอตรวจสอบเอกสาร</p>
+        <p><strong>สาขาวิชา:</strong> เทคโนโลยีสารสนเทศเพื่ออุตสาหกรรมดิจิทัล</p>
+        <p><strong>วันที่ลงทะเบียน:</strong> 30 กันยายน 2569</p>
+      </section>
+      <p>เจ้าหน้าที่จะตรวจสอบเอกสาร และแจ้งความคืบหน้าผ่านอีเมลที่ใช้ลงทะเบียน</p>
+      <div class="actions">
+        <a class="btn btn-secondary" href="index.html">กลับสู่หน้าหลัก</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer"><div class="container footer-inner"><section><h2>ระบบสมัครเรียนออนไลน์</h2><p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p></section><section><h2>ติดต่อ</h2><p>โทร. +66 2 555-2000 ต่อ 1626,1627</p></section><section><h2>ข้อมูลเพิ่มเติม</h2><p><a href="date.html">กำหนดการรับสมัคร</a></p></section></div></footer>
 </body>
 </html>
